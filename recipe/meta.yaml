@@ -1,13 +1,13 @@
 {% set name = "django-structlog" %}
-{% set version = "8.0.0" %}
+{% set version = "8.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-structlog-{{ version }}.tar.gz
-  sha256: e439ae173d8d852b5f991ff7528d8ce5b0ae003cc6ea513215334b3204aee09c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 0229b9a2efbd24a4e3500169788e53915c2429521e34e41dd58ccc56039bef3f
 
 build:
   noarch: python
