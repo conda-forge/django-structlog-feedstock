@@ -1,13 +1,13 @@
 {% set name = "django-structlog" %}
-{% set version = "8.1.0" %}
+{% set version = "9.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0229b9a2efbd24a4e3500169788e53915c2429521e34e41dd58ccc56039bef3f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 0ada1ac0fa4e90a499fc9ce22fc164830304e7219cab12d3b5ef9c2f2967ff5b
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - django >=3.2
+    - django >=4.2
     - structlog >=21.4.0
     - asgiref >=3.6.0
     - django-ipware >=6.0.2
