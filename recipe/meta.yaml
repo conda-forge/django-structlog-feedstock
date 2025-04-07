@@ -1,5 +1,5 @@
 {% set name = "django-structlog" %}
-{% set version = "9.1.0" %}
+{% set version = "9.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 20cb19e3db671a41a839fbc0896b05759680c680fb2147bb1abaa9ab339227f6
+  sha256: 14342c6c824581f1e063c88a8bc52314cd67995a3bd4a4fc8c27ea37ccd78947
 
 build:
   noarch: python
