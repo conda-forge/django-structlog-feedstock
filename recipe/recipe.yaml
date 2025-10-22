@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-structlog
-  version: "9.1.1"
+  version: "10.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 14342c6c824581f1e063c88a8bc52314cd67995a3bd4a4fc8c27ea37ccd78947
+  sha256: 4e3fa4a930697fb9b649470e389419bb73b916a1ecf4f4bf2f8727f5cbfdb002
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
