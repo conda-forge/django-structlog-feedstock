@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-structlog
-  version: "10.0.0"
+  version: 10.1.0
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 4e3fa4a930697fb9b649470e389419bb73b916a1ecf4f4bf2f8727f5cbfdb002
+  sha256: 812f61dea873e559511f42c0f3a7cdc36d4472f6cc15460565a97e5cbe06a76d
 
 build:
   number: 0
@@ -29,7 +29,8 @@ requirements:
     - structlog >=21.4.0
     - asgiref >=3.6.0
     - django-ipware >=6.0.2
-
+    - django-extensions
+    - celery
 tests:
   - python:
       imports:
